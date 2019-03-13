@@ -22,7 +22,7 @@ for i in range(len(s3)-1):
     else:
         print(str(c)+s3[i],end='')
         c=1
-#Assignment 10 Level 2
+#Assignment 10 Level 2 Display All common characters between 2 String
 s4=input('Enter a String: ')
 s5=input('Enter a String: ')
 if len(s4)<len(s5):
