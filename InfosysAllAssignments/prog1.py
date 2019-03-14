@@ -12,6 +12,19 @@ def validate_employee(d,un,en): #dict usage
     return False
 emp_dict={1111:'Sim',1234:'Jomes',9999:'Amy',5555:'Jessica'}
 print(validate_employee(emp_dict,'Jome',1234))
+#Assignment 8: to generate the next 15 leap year starting from a given year
+def leapyear(y):
+    if y%4==0 and y%100!=0 or y%400==0:
+        return True
+    return False
+n=int(input('Enter year:: '))
+lis,i=[],0
+while(i!=15):
+    if(leapyear(n)):
+        lis.append(n)
+        i+=1
+    n+=1
+print(lis)
 #Assignment 9: Mandatory Level 2 count unique occurances in sorted str
 s3=input('Enter a string: ')
 s3+='#'
